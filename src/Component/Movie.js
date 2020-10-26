@@ -2,15 +2,18 @@ import React, { useState } from "react";
 import { Form, Button, Modal } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Movie({ add }) {
+function Movie({ LastId,add }) {
   /*LocalHooks of the new Movie*/
   const [show, setShow] = useState(false);
   const [name, setname] = useState("");
   const [description, setdescription] = useState("");
   const [src, setURLPoster] = useState("");
   const [rating, setrating] = useState("0");
+  const [id, setid] = useState("0");
+
   const Movie = [
     {
+    
       name: name,
       rating: rating,
       src: src,

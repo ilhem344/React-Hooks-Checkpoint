@@ -16,6 +16,7 @@ function MovieList({ Movielist, searchTerm, rating }) {
             rating={el.rating}
             src={el.src}
             description={el.description}
+            id={el.id}
           />
         </div>
       ))}
